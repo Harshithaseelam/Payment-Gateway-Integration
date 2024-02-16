@@ -365,3 +365,25 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .fields {
+        flex-direction: column; /* Stack fields vertically */
+    }
+
+    .fields .field {
+        width: 100%; /* Take up full width */
+        margin-bottom: 10px; /* Reduce margin */
+    }
+
+    .about h2.title {
+        font-size: 24px; /* Decrease font size */
+    }
+}
+
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+    .about h2.title {
+        font-size: 20px; /* Further decrease font size */
+    }
+}
