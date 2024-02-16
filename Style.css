@@ -367,10 +367,6 @@ footer span a:hover{
 }
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
-    .fields {
-        flex-direction: column; /* Stack fields vertically */
-    }
-
     .fields .field {
         width: 100%; /* Take up full width */
         margin-bottom: 10px; /* Reduce margin */
@@ -381,9 +377,33 @@ footer span a:hover{
     }
 }
 
-/* For screens smaller than 500px */
 @media (max-width: 500px) {
     .about h2.title {
         font-size: 20px; /* Further decrease font size */
     }
+
+    .about .about-content .left img {
+        height: 250px; /* Decrease image height for better fit */
+        width: 250px; /* Decrease image width for better fit */
+    }
+
+    .about .about-content .right {
+        width: 100%; /* Take up full width */
+    }
+
+    .about .about-content .right .text {
+        font-size: 18px; /* Decrease font size */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .about .about-content .right p {
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .about .about-content .right a {
+        font-size: 16px; /* Decrease font size */
+        padding: 8px 20px; /* Adjust padding */
+        margin-top: 15px; /* Adjust margin */
+    }
 }
+
